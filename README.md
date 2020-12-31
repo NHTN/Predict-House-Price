@@ -55,8 +55,23 @@ Dữ liệu thu thập được còn khá tổng hợp, chưa phân tách rõ. C
 
 **Ý nghĩa dữ liệu**: Nội dung mô tả tên và địa điểm của bất động sản bao gồm tên đường, tên phường, tên quận, tên thành phố.
 
-**Ý nghĩa 
+**Đặc điểm dữ liệu**: Dữ liệu văn bản. Gồm nhiều trường dữ liệu nhỏ có thể phân tách được như tên bất động sản, tên đường, tên phường, tên quận và tên thành phố toạ lạc của bất động sản. Thông tin quan trọng nhưng cần xử lý phân tách chuỗi ra các cột dữ liệu nhỏ.
+
+**Ý dữ liệu**: Định danh được bất động sản và khu vực của bất động sản.
+
+### Trường dữ liệu Giá
+
+**Ý nghĩa dữ liệu**: Thể hiện giá của bất động sản và là thông tin cần được dự đoán của bài toán.
+
 ## 6. Đánh giá
+
+- Kết quả bài toán cho thấy các mức giá bất động sản tại khu vực thành phố Hồ Chí Minh, dự đoán được khoảng giá bất động sản với cái tham số đầu vào như trong bài làm.
+- Về tổng quan, độ chính xác của bài làm vẫn còn khá thấp do nhiều yếu tố:
+  - Dữ liệu thu thập vẫn còn ít (17000 dòng sau khi đã xử lý).
+  - Giá trị của các trường dữ liệu dùng để dự đoán vẫn còn bị nhiễu khá nhiều do độ chính xác của nguồn để thu thập dữ liệu không thật sự được kiểm chúng chính xác hoàn toàn.
+  - Quá trình xử lý dữ liệu còn hạn chế.
+  - Mô hình áp dụng để dự đoán chưa được tối ưu.
+- Tuy nhiên, thông qua kết quả và quá trình thực hiện đồ án này, bản thân các thành viên trong nhóm đã học và củng cố một số kỹ năng hỗ trợ giải quyết các bài toán về khoa học dữ liệu và hy vọng có thể ứng dụng được trong tương lai.
 
 ## 7. Phân công công việc
 
