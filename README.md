@@ -57,11 +57,43 @@ Dữ liệu thu thập được còn khá tổng hợp, chưa phân tách rõ. C
 
 **Đặc điểm dữ liệu**: Dữ liệu văn bản. Gồm nhiều trường dữ liệu nhỏ có thể phân tách được như tên bất động sản, tên đường, tên phường, tên quận và tên thành phố toạ lạc của bất động sản. Thông tin quan trọng nhưng cần xử lý phân tách chuỗi ra các cột dữ liệu nhỏ.
 
-**Ý dữ liệu**: Định danh được bất động sản và khu vực của bất động sản.
+**Nhận xét dữ liệu**: Định danh được bất động sản và khu vực của bất động sản.
 
 ### Trường dữ liệu Giá
 
 **Ý nghĩa dữ liệu**: Thể hiện giá của bất động sản và là thông tin cần được dự đoán của bài toán.
+
+**Đặc điểm dữ liệu**: Dữ liệu dạng chuỗi với nhiều dạng dữ liệu nhiễu như:
+  
+- Dữ liệu đơn vị tỷ
+- Dữ liệu đơn vị triệu
+- Dữ liệu "Thoả thuận"
+
+**Nhận xét dữ liệu**: Dữ liệu dùng để dự đoán.
+
+### Trường dữ liệu Diện tích
+
+**Ý nghĩa dữ liệu**: Thể hiện diện tích của bất động sản.
+
+**Đặc điểm dữ liệu**: Dữ liệu dạng chuỗi có dạng "${dien-tich} m2".
+
+**Nhận xét dữ liệu**: Dữ liệu quan trọng, cần được xử lý và chuyển sang dạng numerical.
+
+### Trường dữ liệu Đặc điểm bất động sản
+
+**Ý nghĩa dữ liệu**: Thể hiện thông tin đặc điểm bất động sản bao gồm loại tin đăng, địa chỉ, số phòng ngủ, nội thất,...
+
+**Đặc điểm dữ liệu**: Dữ liệu văn bản cần phân tách và xử lý.
+
+**Nhận xét dữ liệu**: Dữ liệu quan trọng cho việc predict giá.
+
+### Trường dữ liệu Thông tin dự án
+
+**Ý nghĩa dữ liệu**: Gồm tên dự án
+
+**Đặc điểm dữ liệu**: Dữ liệu dạng văn bản
+
+**Nhận xét dữ liệu**: Bị trùng lắp với Chú thích, chỉ cần chọn tên dự án từ 1 trong trường.
 
 ## 6. Đánh giá
 
@@ -71,6 +103,7 @@ Dữ liệu thu thập được còn khá tổng hợp, chưa phân tách rõ. C
   - Giá trị của các trường dữ liệu dùng để dự đoán vẫn còn bị nhiễu khá nhiều do độ chính xác của nguồn để thu thập dữ liệu không thật sự được kiểm chúng chính xác hoàn toàn.
   - Quá trình xử lý dữ liệu còn hạn chế.
   - Mô hình áp dụng để dự đoán chưa được tối ưu.
+- Để củng cố kết quả bài toán, cần thu thập thêm dữ liệu với độ chính xác cao. Đồng thời tối ưu các tham số để thuật toán Machine Learning áp dụng hiệu quả.
 - Tuy nhiên, thông qua kết quả và quá trình thực hiện đồ án này, bản thân các thành viên trong nhóm đã học và củng cố một số kỹ năng hỗ trợ giải quyết các bài toán về khoa học dữ liệu và hy vọng có thể ứng dụng được trong tương lai.
 
 ## 7. Phân công công việc
